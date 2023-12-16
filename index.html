@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasty Daily</title>
+    <link rel="icon" href="icon2.png" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <style href="aa.css"></style>
+    <style>
+      .icon{
+        width: 30px;
+      }
+      .tasty{
+        color: yellow;
+        font-weight: 1000;
+      }
+      .daily{
+        color:white;
+      }
+      .welcome1{
+        color: yellow;
+        
+      }
+      .to{
+        color: white;
+      }
+      .tasty1{
+        color: yellow;
+      }
+      .daily1{
+        color:white
+      }
+      #box{
+        text-align: center;
+      }
+      body{
+        background-color: orange;
+      }
+      #n3{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;      
+      }
+      img{
+        width: 750%;
+        
+      }
+      .bf{
+        text-align: center;
+      }
+      h2{
+        color: black;
+      }
+
+      
+      a.n3{
+        text-decoration: none;
+        color: black;
+        
+        
+      }      
+      h1.n5{
+        color: #4CAF50;
+        font-family:Garamond, serif ;
+      }
+      img.menu{
+        width: 110px;
+        height: 110px;
+        top: 150px;
+        
+      }
+      @media screen and (max-width: 767px){
+        body{
+          background-color:#4CAF50;
+          margin-top: 40px;
+        }
+       img.menu{
+        width: 70px;
+        height: 110px;  
+
+       }
+       h1.n5{
+        color: orange;
+       }
+       .hr{
+        padding: 0px;
+        margin: 0% 0% 0px 0px;
+        border: 4px solid #4CAF50;
+      }
+      img{
+        object-fit: fill;
+      }
+      }
+
+      a.text-dark{
+        text-decoration: none;
+      }
+      .tele{
+        width: 20px;
+      }
+      .top{
+        width: 40px; height: 30px;
+        nav-right: 100%;
+        margin-right: 20px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
+
+      .hr{
+        padding: 0px;
+        margin: 0% 0% 0px 0px;
+        border: 4px solid orange;
+      }
+      .col-sm-4 text-white{
+        width: 250px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        text-align: center;
+      }
+      div.container4{
+        margin-top: 50px;
+        margin-left: 50px;
+        justify-content: center;
+     
+      }
+      .d-block:hover{
+        transform: scale(1.1);
+      
+      }
+      .top:hover{
+        transform: scale(1.1);
+      }
+     
+      #profile{
+        
+        margin-bottom: 6px;
+      }
+      .card {
+        
+        box-shadow: 8px 4px 8px 8px rgb(247, 130, 6);
+        max-width: 300px;
+        max-height: 450px;
+        height: 500px;
+        margin: auto;
+        text-align: center;
+        font-family: arial;
+        background-color: orange;
+      }
+     
+      .card2{
+        
+        box-shadow: 4px 4px 8px 4px rgb(241, 127, 5);
+        max-width: 300px;
+        max-height: 450px;
+        height: 450px;
+        width: 200px;
+        margin: auto;
+        text-align: center;
+        background-color:orange ;
+        border-radius: 10px;
+      }
+      #contact{
+        border: 2px solid #4CAF50;
+        margin-left: 50px;
+        height: 300px;
+        width: 250px;
+        margin-top: 20px;
+        background-color:#4CAF50 ;
+        box-shadow:0px 2px 4px 2px black;
+      }
+      #location{
+        border: 2px solid #4CAF50;
+        margin-left: 50px;
+        height: 300px;
+        width: 250px;
+        margin-top: 20px;
+        background-color:#4CAF50  ;
+        box-shadow:0px 2px 4px 2px black;
+        
+      }
+      #about{
+        border: 2px solid #4CAF50;
+        margin-left: 50px;
+        height: 300px;
+        width: 250px;
+        margin-top: 20px;
+        background-color:#4CAF50 ;
+        box-shadow:0px 2px 4px 2px black;
+    
+      }
+      #area{
+        border: 2px solid #4CAF50;
+        margin-left: 50px;
+        height: 300px;
+        width: 500px;
+        margin-top: 20px;
+        background-color:#4CAF50  ;
+        box-shadow:0px 2px 4px 2px black ;
+       
+      }
+      #about:hover{
+        transform: scale(1.1)
+      }
+      #location:hover{
+        transform: scale(1.1)
+      }
+      #contact:hover{
+        transform: scale(1.1)
+      }
+      .button {
+        display: inline-block;
+        border-radius: 4px;
+        background-color: green;
+        border: 3px solid black;
+        color: #FFFFFF;
+        text-align: center;
+        font-size: 15px;
+        padding: 10px;
+        width: 130px;
+        margin: 5px;
+      }
+      button:hover{
+        transform: scale(1.1);
+      }
+   
+      
+      
+     
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm bg-warning navbar-dark p-4 fixed-top">
+      <div class="container-fluid">
+        <img class="icon" src="img/icon.png" alt="image"> &nbsp;
+        <a class="navbar-brand" href="#" id="n3"><large class="text-dark"><B class="tasty">TASTY <b class="daily">DAILY</B></b></large> </a>
+        <img class="icon" src="img/menu.png" alt="image">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle bg-warning text-success" href="#" role="button" data-bs-toggle="dropdown"><B>MENU</B></a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item bg-warning text-light" href="#breakfast">BREAKFAST</a></li> 
+                <li><a class="dropdown-item bg-light text-dark" href="#lunch">LUNCH</a></li> 
+                <li><a class="dropdown-item bg-warning text-light" href="#dinner">DINNER</a></li>
+                <li><a class="dropdown-item bg-light text-dark" href="#fastfood">FOREGIN FOODS</a></li>
+                <li><a class="dropdown-item bg-warning text-light" href="#tea">TEA & SNACKS</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div> 
+        <div>
+          <div class="collapse2 navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+              <li class="nav-item ">
+                <a class="nav-link text-success" href="#about"><b>ABOUT-US</b></a>
+              </li> &nbsp;&nbsp;
+              <li class="nav-item">
+                <a class="nav-link text-success" href="#contact"><b>CONTACT-US</b></a>
+              </li>&nbsp;&nbsp;
+            
+            </ul>
+     
+            <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-success" href="#" role="button" data-bs-toggle="dropdown" style="margin-top: 7px;"  id="profile"><b>PROFILE</b></a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item bg-warning text-light" href="signin.html">SIGIN</a></li>
+                <li><a class="dropdown-item bg-light text-dark" href="signin.html">LOGOUT</a></li>
+              </ul>
+            </li>
+          </ul>
+       
+      </div>
+      </div>
+    </nav>
+    <br> <br> 
+    <nav class="navbar navbar-expand-sm bg-warning navbar-dark p-1 fixed-bottom" style="margin-left: 1300px; margin-right: 0px; opacity: 0.7; border: 4px solid black;" id="cartBox" >
+    <div><a class="nav-link text-success" href="#cart"><b style="margin-left:80px; margin-bottom: 20px;">CART<img class="icon" src="img/cart.png" alt="image" style="height: 30px; width: 30px;" ></b></a>
+  
+    <div class="cart text-dark">
+      <ul id="cart-items"></ul>
+      <p id="total" style="margin-left: 25px;">Total: Rs 0.00</p>
+    </div>
+    <button class="btn btn-success" style="margin-left: 70px; margin-bottom: 10px;" onclick="checkout()">ORDER</button>
+ 
+    </nav>  
+    <script src="aa.js"></script>
+  
+
+    <div class=" mt-4 p-2 bg-success text-white" id="box" >
+      <marquee>
+      </marquee>
+    <marquee direction="Left">
+      <h1 class="tasty1" style="font-family: Garamond, serif; "><b class="welcome1">WELCOME </b><b class="to">TO </b><b class="">TASTY</b>  <B class="daily1">DAILY'S</B><b class="res"> RESTAURTANT <img src="img/lunchtime.png" alt="aruma" style="width: 60px; margin-bottom: 30px;"></b></h1>
+    </marquee>
+    </div>
+    <br> <br> 
+
+
+    <!-- Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+
+  
+  <!-- The slideshow/carousel -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <center>
+      <a href="#breakfast"><img src="img/idly.jpg" alt="idly" class="d-block" style="max-width:300px; width: 90%;"></center> <br>
+      <div class="carousel-caption"> 
+        <h3>BREAKFAST</h3>
+        <p>START A DAY WITH OUR IDLY SAMBAR!</p>
+      </div></a>
+    </div>
+    <div class="carousel-item">
+     <center>
+    <a href="#lunch"><img src="img/briyani.jpg" alt="briyani" class="d-block" style="width:90%;max-width:300px"> </center> <br>
+      <div class="carousel-caption">
+        <h3>LUNCH</h3>
+        <p>THANK YOU, BRIYANI!</p>
+      </div> </a>
+    </div>
+    <div class="carousel-item">
+    <center>
+      <a href="#dinner"><img src="img/dosa.jpg" alt="dosa" class="d-block" style="width:100%;max-width: 300px;"></center> <br>
+      <div class="carousel-caption">
+        <h3>DINNER</h3>
+        <p>WE lOVE, Big DOSA!</p>
+      </div>  </a>
+    </div>
+    <div class="carousel-item">
+      <center> 
+        <a href="#fastfood"><img src="img/pizza1.webp" alt="pizza" class="d-block" style="width:100%;max-width:300px"> </center>  <br>
+       <div class="carousel-caption">
+         <h3>FOREGIN FOODS</h3>
+         <p>YUMMY, WORLD!</p>
+       </div> </a>
+     </div>
+     <div class="carousel-item">
+      <center>
+        <a href="#tea"><img src="img/tea.jpg" alt="tea" class="d-block" style="width:90%; max-width:300px"> </center> <br>
+       <div class="carousel-caption">
+         <h3 style="color: aliceblue;">TEA & SNACKS</h3>
+         <p style="color: aliceblue; text-decoration:none">RELAX!</p> 
+       </div></a>
+     </div>
+  </div>
+  
+  <!-- Left and right controls/icons -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+  </div>
+  <br>  <br>
+
+
+  <center>
+    
+     <h1 class="n5 bg-warning">
+      <img class="menu" src="img/sm4.png" alt="menu" style="margin-bottom:40px;" > <b class="tasty1" >OUR'S </b><b class="daily1">SPECIAL</b> <b>DISHES</b>   <img class="menu" src="img/sm7.png" alt="menu" style="margin-bottom:40px;"> </h1> </center>
+  <div id="demo" class="carousel slide bg-warning " data-bs-ride="carousel"> <br>
+  
+    <div class="carousel-inner ">
+      <div class="carousel-item active">
+        <div class="row">
+         <h2 class="bf"> <a href="" class="n3">BREAKFAST <img src="img/english-breakfast.png" alt="symbol" class="break" style="width: 50px; margin-bottom:10px;"></a></h2> <br><br><br>
+            <div class="col-sm-4 text-white" ><img src="img/pongal2.jpg" alt="pongal" style="width:90%; max-width:400px;  max-height: 300px;border-radius:10%;margin-left: 50px;">
+            </div>
+        <div class="col-sm-4 text-white"><img src="img/poori.jpg" alt="poori" style="width:90%; max-width:400px; max-height: 300px; border-radius:10%;margin-left: 50px">
+        </div>
+        <div class="col-sm-4 text-white" ><img src="img/idly2.jpg" alt="idly2" style="width:90%; max-width:400px;  max-height: 300px;border-radius:10%;margin-left: 50px">
+        </div>  
+      </div>
+    </div>
+  </div>
+  <div class="carousel-inner" >
+    <div class="carousel-item">
+      <div class="row">
+        <h2 class="bf"> <a href="" class="n3">LUNCH <img src="img/cooking.png" alt="symbol" class="break" style="width: 60px; margin-bottom:15px;"></a></h2> <br>  <br><br>
+          <div class="col-sm-4 text-white" ><img src="img/meals.jpg" alt="meals" style="width:90%; max-width:400px; max-height: 300px; border-radius:10%;margin-left: 50px">
+          </div>
+          <div class="col-sm-4 text-white"><img src="img/lemon.jpg" alt="lemon-rice" style="width:90%; max-width:400px; max-height: 300px; border-radius:10%;margin-left: 50px">
+          </div>
+          <div class="col-sm-4 text-white" ><img src="img/fish.jpg" alt="fishrice" style="width:90%; max-width:400px; max-height: 300px; border-radius:10%;margin-left: 50px">
+          </div>
+        </div>
+      </div>
+    <div class="carousel-inner" >
+      <div class="carousel-item">
+        <div class="row">
+          <h2 class="bf"> <a href="" class="n3">DINNER <img src="img/dinner.png" alt="symbol" class="break" style="width: 60px; margin-bottom:20px;"></a></h2> <br> <br><br>
+            <div class="col-sm-4 text-white">
+              <img src="img/parotta1.jpg"alt="p" style="width:90%; max-width:400px; max-height: 300px; border-radius:10%;margin-left: 50px">
+            </div>
+            <div class="col-sm-4 text-white" >
+              <img src="img/chapthi.jpg" alt="chapthi" style="width:90%; max-width:400px; max-height: 300px; border-radius:10%;margin-left: 50px">
+            </div>
+            <div class="col-sm-4 text-white" >
+              <img src="img/dosa2.jpg" alt="d" style="width:90%; max-width:400px; max-height: 300px; border-radius:10%;margin-left: 50px">
+            </div>
+          </div> 
+        </div>
+      </div>
+      <div class="carousel-inner" >
+        <div class="carousel-item">
+      <div class="row">
+        <h2 class="bf"> <a href="" class="n3">FOREGIN FOODS <img src="img/fast.png" alt="symbol" class="break" style="width: 45px; margin-bottom:15px;"></a></h2> <br><br><br> 
+          <div class="col-sm-4 text-white" >
+            <img src="img/chickenroll.jpg" alt="chickenroll" style="width:90%; max-width:400px; max-height: 300px; border-radius:10%;margin-left: 50px">
+          </div>
+          <div class="col-sm-4 text-white">
+            <img src="img/burger.jpg" alt="burger" style="width:90%; max-width:400px; max-height: 300px; border-radius:10%;margin-left: 50px">
+          </div>
+          <div class="col-sm-4 text-white" >
+            <img src="img/sandwich.jpg" alt="sandwich" style="width:90%; max-width:400px; max-height: 300px; border-radius:10%;margin-left: 50px">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item ">
+        <div class="row">
+          <h2 class="bf"><a href="" class="n3"> TEA & SNACKS <img src="img/tea snals.png" alt="symbol" class="break" style="width: 60px; margin-bottom:15px;"></a></h2> <br><br> <br>
+            <div class="col-sm-4 text-white" >
+              <img src="img/coffee.jpg" alt="coffee" style="width:90%; max-width:400px; max-height: 300px; border-radius:10%;margin-left: 50px">
+            </div>
+            <div class="col-sm-4 text-white">
+              <img src="img/samosa.jpg" alt="samosa" style="width:90%; max-width:400px; max-height: 300px; border-radius:10%;margin-left: 50px">
+            </div>
+            <div class="col-sm-4 text-white" >
+              <img src="img/bonda.jpg" alt="bonda" style="width:90%; max-width:400px; max-height: 300px; border-radius:10%;margin-left: 50px">
+            </div>
+          </div>
+        </div>
+    </div> 
+</div> <br>
+<div> <br>
+
+</div>  
+
+
+</div>
+<hr class="hr">
+
+<div class="yellow bg-warning" style=" padding-top:50px; padding-bottom: 50px">
+  <center><h2 style="color: aliceblue;">ORDER YOUR FOOD'S NOW !!! <img src="img/or1.png" style="width:50px; "></h2></center>
+  <center><h2><a href="" class="n3">BREAKFAST <img src="img/english-breakfast.png" alt="symbol" id="breakfast" class="break" style="width: 50px; margin-bottom:10px;"></a></h2></center> <br>
+  <div class="row">
+    <div class="col-sm-3">
+      <div class="card">
+        <img src="img/idly.jpg" alt="Avatar" style="width:300px" height="300px">
+        <div class="container">
+          <h5 style="font-style: italic; color: white; margin-top: 10px;"><b>Idly Vada</b></h5>
+
+          <h5 style="color: black;">Rs. 35</h5>
+          <button class="button" style="vertical-align:middle" onclick="addToCart('Idly vadsa', 35)"><span>ADD CART </span></button>
+        </div>
+      </div>
+    </div> 
+    
+    <div class="col-sm-3">
+      <div class="card">
+        <img src="img/pongal2.jpg" alt="Avatar" style="width:300px" height="300px">
+        <div class="container">
+          <h5 style="font-style: italic; color: white; margin-top: 10px;"><b>Pongal</b></h5>
+          <h5 style="color: black;">Rs. 40</h5>
+          <button class="button" style="vertical-align:middle" onclick="addToCart('pongal', 40)"><span>ADD CART </span></button>
+
+        </div>
+      </div>
+    </div>
+  
+    <div class="col-sm-3">
+      <div class="card">
+        <img src="img/poori.jpg" alt="Avatar" style="width:300px" height="300px">
+        <div class="container">
+          <h5 style="font-style: italic; color: white; margin-top: 10px;"><b>Poori</b></h5>
+          <h5 style="color: black;">Rs. 25</h5>
+          <button class="button" style="vertical-align:middle" onclick="addToCart('Poori', 25)"><span>ADD CART </span></button>
+
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="card">
+        <img src="img/dosa2.jpg" alt="Avatar" style="width:300px; height: 300px;">
+        <div class="container" >
+           <h5 style="font-style: italic; color: white; margin-top: 10px;"><b>Dosa</b></h5>
+          <h5 style="color: black;">Rs. 40</h5>
+          <button class="button" style="vertical-align:middle" onclick="addToCart('Dosa', 40)"><span>ADD CART </span></button>
+
+        </div>
+      </div>
+    </div>
+   
+  </div> <br> <br>
+
+  <center><h2> <a href="" id="lunch" class="n3">LUNCH <img src="img/cooking.png" alt="symbol" class="break" style="width: 60px; margin-bottom:15px;"></a></h2></center> <br>
+  <div class="row">
+    <div class="col-sm-3">
+      <div class="card">
+        <img src="img/briyani.jpg" alt="Avatar" style="width:300px" height="300px">
+        <div class="container">
+          <h5 style="font-style: italic; color: white; margin-top: 10px;"><b>Briyani</b></h5>
+          <h5 style="color: black;">Rs. 130</h5>
+          <button class="button" style="vertical-align:middle" onclick="addToCart('Briyani', 130)"><span>ADD CART </span></button>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-3">
+      <div class="card">
+        <img src="img/lemon.jpg" alt="Avatar" style="width:300px" height="300px">
+        <div class="container">
+          <h5 style="font-style: italic; color: white; margin-top: 10px;"><b>Lemon Rice</b></h5>
+          <h5 style="color: black;">Rs. 60</h5>
+          <button class="button" style="vertical-align:middle" onclick="addToCart('Lemon rice', 60)"><span>ADD CART </span></button>
+
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-sm-3">
+      <div class="card">
+        <img src="img/fish.jpg" alt="Avatar" style="width:300px" height="300px">
+        <div class="container">
+          <h5 style="font-style: italic; color: white; margin-top: 10px;"><b>Fish Rice</b></h5>
+          <h5 style="color: black;">Rs. 90</h5>
+          <button class="button" style="vertical-align:middle" onclick="addToCart('Fish Rice', 90)"><span>ADD CART </span></button>
+
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="card">
+        <img src="img/meals.jpg" alt="Avatar" style="width:300px; height: 300px;">
+        <div class="container" >
+          <h5 style="font-style: italic; color: white; margin-top: 10px;"><b>Meals</b></h5>
+          <h5 style="color: black;">Rs. 70</h5>
+          <button class="button" style="vertical-align:middle" onclick="addToCart('Meals', 70)"><span>ADD CART </span></button>
+
+        </div>
+      </div>
+    </div>
+  </div><br> <br>
+  
+<center><h2><a href="" id="dinner" class="n3">DINNER <img src="img/dinner.png" alt="symbol" class="break" style="width: 60px; margin-bottom:20px;"></a></h2> <br></center>
+<div class="row">
+    <div class="col-sm-3">
+      <div class="card">
+        <img src="img/dosa.jpg" alt="Avatar" style="width:300px" height="300px">
+        <div class="container">
+          <h5 style="font-style: italic; color: white; margin-top: 10px;"><b>Dosa</b></h5>
+          <h5 style="color: black;">Rs. 40</h5>
+                    <button class="button" style="vertical-align:middle" onclick="addToCart('Dosa', 40)"><span>ADD CART </span></button>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-3">
+      <div class="card">
+        <img src="img/chapthi.jpg" alt="Avatar" style="width:300px" height="300px">
+        <div class="container">
+            <h5 style="font-style: italic; color: white; margin-top: 10px;"><b>Chapathi</b></h5>
+          <h5 style="color: black;">Rs. 30</h5>
+                    <button class="button" style="vertical-align:middle" onclick="addToCart('Chapathi', 30)"><span>ADD CART </span></button>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-3">
+      <div class="card">
+        <img src="img/parotta1.jpg" alt="Avatar" style="width:300px" height="300px">
+        <div class="container">
+           <h5 style="font-style: italic; color: white; margin-top: 10px;"><b>PParotta</b></h5>
+          <h5 style="color: black;">Rs. 15</h5>
+          <button class="button" style="vertical-align:middle" onclick="addToCart('Parotta', 15)"><span>ADD CART </span></button>
+
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="card">
+        <img src="img/idly2.jpg" alt="Avatar" style="width:300px; height: 300px;">
+        <div class="container" >
+          <h5 style="font-style: italic; color: white; margin-top: 10px;"><b>Specil Idly</b></h5>
+          <h5 style="color: black;">Rs. 50</h5>
+          <button class="button" style="vertical-align:middle" onclick="addToCart('Specil Idly', 50)"><span>ADD CART </span></button>
+
+        </div>
+      </div>
+    </div>
+  </div> <br> <br>
+  <div style="text-align: center;"> <h2 id="fastfood">FOREGIN FOODS  <img src="img/fast.png" alt="symbol" class="break" style="width: 45px; margin-bottom:15px;"></h2></div> <br>
+  <div class="row">
+    <div class="col-sm-2">
+      <div class="card2">
+        <img src="img/pizza1.webp" alt="Avatar" style="width:200px" height="300px">
+        <div class="container">
+           <h5 style="font-style: italic; color: white; margin-top: 10px;"><b>Pizza</b></h5>
+          <h5 style="color: black;">Rs. 110</h5>
+          <button class="button" style="vertical-align:middle" onclick="addToCart('Pizza', 110)"><span>ADD CART </span></button>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-2">
+      <div class="card2">
+        <img src="img/sand.jpg" alt="Avatar" style="width:200px" height="300px">
+        <div class="container">
+           <h5 style="font-style: italic; color: white; margin-top: 10px;"><b>Sandwich</b></h5>
+          <h5 style="color: black;">Rs. 80</h5>
+          <button class="button" style="vertical-align:middle" onclick="addToCart('Sandwich', 80)"><span>ADD CART </span></button>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-2">
+      <div class="card2">
+        <img src="img/burger.jpg" alt="Avatar" style="width:200px" height="300px">
+        <div class="container">
+        
+           <h5 style="font-style: italic; color: white; margin-top: 10px;"><b>Burger</b></h5>
+          <h5 style="color: black;">Rs. 60</h5>
+          <button class="button" style="vertical-align:middle" onclick="addToCart('Burger', 60)"><span>ADD CART </span></button>
+
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-2">
+      <div class="card2">
+        <img src="img/chickenroll.jpg" alt="Avatar" style="width:200px; height: 300px;">
+        <div class="container" >
+           <h5 style="font-style: italic; color: white; margin-top: 10px;"><b>Chicken Roll</b></h5>
+          <h5 style="color: black;">Rs. 90</h5>
+          <button class="button" style="vertical-align:middle" onclick="addToCart('Chicken Roll', 90)"><span>ADD CART </span></button>
+
+        </div>
+      </div>
+    </div>
+      <div class="col-sm-2">
+        <div class="card2">
+          <img src="img/bread.jpg" alt="Avatar" style="width:200px; height: 300px;">
+          <div class="container" >
+          <h5 style="font-style: italic; color: white; margin-top: 10px;"><b>Bread Salad</b></h5>
+          <h5 style="color: black;">Rs. 75</h5>
+          <button class="button" style="vertical-align:middle" onclick="addToCart('Bread Salad', 75)"><span>ADD CART </span></button>
+
+          </div>
+        </div>
+      </div>
+        <div class="col-sm-2">
+          <div class="card2">
+            <img src="img/fires.jpg" alt="Avatar" style="width:200px; height: 300px;">
+            <div class="container" >
+              <h5 style="font-style: italic; color: white; margin-top: 10px;"><b>French Fries</b></h5>
+          <h5 style="color: black;">Rs. 65</h5>
+          <button class="button" style="vertical-align:middle" onclick="addToCart('French Fries', 65)"><span>ADD CART </span></button>
+
+            </div>
+          </div>
+    </div>
+  </div>
+
+  <br> <br> 
+  <div style="text-align: center;"><h2 id="tea"> TEA & SNACKS <img src="img/tea snals.png" alt="symbol" class="break" style="width: 45px; margin-bottom:15px;"></h2></div> <br>
+  <div class="row">
+    <div class="col-sm-2">
+      <div class="card2">
+        <img src="img/tea.jpg" alt="Avatar" style="width:200px" height="300px">
+        <div class="container">
+           <h5 style="font-style: italic; color: white; margin-top: 10px;"><b>Tea</b></h5>
+          <h5 style="color: black;">Rs. 15</h5>
+          <button class="button" style="vertical-align:middle" onclick="addToCart('tea', 15)"><span>ADD CART </span></button>
+
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-sm-2">
+      <div class="card2">
+        <img src="img/coffee.jpg" alt="Avatar" style="width:200px" height="300px">
+        <div class="container">
+           <h5 style="font-style: italic; color: white; margin-top: 10px;"><b>Coffee</b></h5>
+          <h5 style="color: black;">Rs. 20</h5>
+          <button class="button" style="vertical-align:middle" onclick="addToCart('Coffee', 20)"><span>ADD CART </span></button>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-2">
+      <div class="card2">
+        <img src="img/cake.jpg" alt="Avatar" style="width:200px" height="300px">
+        <div class="container">
+           <h5 style="font-style: italic; color: white; margin-top: 10px;"><b>Cake</b></h5>
+          <h5 style="color: black;">Rs. 35</h5>
+          <button class="button" style="vertical-align:middle" onclick="addToCart('Cake', 35)"><span>ADD CART </span></button>
+
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-2">
+      <div class="card2">
+        <img src="img/bonda.jpg" alt="Avatar" style="width:200px; height: 300px;">
+        <div class="container" >
+           <h5 style="font-style: italic; color: white; margin-top: 10px;"><b>Bonda</b></h5>
+          <h5 style="color: black;">Rs. 15</h5>
+          <button class="button" style="vertical-align:middle" onclick="addToCart('Bonda', 15)"><span>ADD CART </span></button>
+
+        </div>
+      </div>
+    </div>
+      <div class="col-sm-2">
+        <div class="card2">
+          <img src="img/ice.jpg" alt="Avatar" style="width:200px; height: 300px;">
+          <div class="container" >
+            <h5 style="font-style: italic; color: white; margin-top: 10px;"><b>Ice Cream</b></h5>
+          <h5 style="color: black;">Rs. 30</h5>
+          <button class="button" style="vertical-align:middle" onclick="addToCart('Ice Cream', 30)"><span>ADD CART </span></button>
+
+          </div>
+        </div>
+      </div>
+        <div class="col-sm-2">
+          <div class="card2">
+            <img src="img/bisc.jpg" alt="Avatar" style="width:200px; height: 300px;">
+            <div class="container" >
+               <h5 style="font-style: italic; color: white; margin-top: 10px;"><b>Biscuit</b></h5>
+          <h5 style="color: black;">Rs. 25</h5>
+          <button class="button" style="vertical-align:middle" onclick="addToCart('Biscuit', 25)"><span>ADD CART </span></button>
+
+            </div>
+          </div> 
+          
+    </div>
+</div>
+<center style="padding-top: 50px;">&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</center></div> 
+
+  <footer class="text-center text-lg-start" style="padding-top: 0px;">
+   
+    <div class="container4 m-1 p-4">
+        <center><h3 style="color: rgb(15, 15, 15); ">OUR DETAIL'S</h3></center>
+      <div class="row">
+        <div class="col-lg-3 text-Dark" style="text-align: center;" id="about"> 
+          <h5 style="margin-top: 15px;">ABOUT AS</h5>
+        <p> &nbsp;"Our journey began with a simple passion for exceptional flavors, a love for culinary exploration, and a desire to share the joy of delicious meals. Our Mission is, We believe that everyone should have access to a wide variety of cuisines, conveniently delivered" </p>
+        
+        </div>
+    
+        <div class="col-lg-3" style="text-align: center;" id="location"> 
+          
+          <h5 class="text-dark" style="margin-top: 15px;">  LOCATION</h5>
+          <ul class="list-unstyled mb-1 p-0 text-dark">
+            <li style="padding: 4px;">Salem</li>
+            <li style="padding: 4px;"> Trichy</li> 
+            
+            <li style="padding: 4px;"> Chennai</li>
+            <li style="padding: 4px;"> Maduari</li>
+            <li style="padding: 4px;"> Ramnad</li>
+            <li style="padding: 4px;"> Coimbature</li>
+            <li style="padding: 4px;">Thiruvanamalai</li>
+            
+          </ul>
+
+        </div>
+        <div class="col-lg-3" id="contact">
+          <h5 class="text-uppercase  text-dark" style="margin-top: 15px; margin-left: 35px;" > &nbsp; &nbsp; &nbsp;CONTACT</h5> 
+  
+          <ul class="list-unstyled mb-1">
+           
+            <li class="p-1">
+              <img src="img/tele.png" alt="tele" class="tele">&nbsp; &nbsp;
+              <a href="#!" class="text-dark" style="text-decoration: none; " >+91 8267233233</a>
+            </li> 
+            <li class="p-1">
+              <img src="img/email.png" alt="email" class="tele" >
+              &nbsp; &nbsp;<a href="#!" class="text-dark" style="text-decoration: none; " >tastydaily@gmail.com</a>
+            </li> 
+            <li class="p-1">
+              <img src="img/instagram (1).png" alt="insta" class="tele">&nbsp; &nbsp;
+              <a href="#!" class="text-dark" style="text-decoration: none; " >tasty_daily</a>
+            </li>  
+            <li class="p-1">
+              <img src="img/twitter.png" alt="twitter" class="tele">&nbsp; &nbsp;
+              <a href="#!" class="text-dark" style="text-decoration: none; "  >tastyDailywtitter</a>
+            </li> 
+            <li class="p-1">
+                <img src="img/social.png" alt="email" class="tele" >
+                &nbsp; &nbsp;<a href="#!" class="text-dark" style="text-decoration: none; " >www.tastydaily.com</a>
+              </li> 
+              <li class="p-1">
+                <img src="img/youtube.png" alt="insta" class="tele">&nbsp; &nbsp;
+                <a href="#!" class="text-dark" style="text-decoration: none; " >tastydaily</a>
+              </li>  
+              <li class="p-1">
+                <img src="img/facebook.png" alt="twitter" class="tele">&nbsp; &nbsp;
+                <a href="#!" class="text-dark" style="text-decoration: none; "  >tastyDailywtitter</a>
+              </li>
+          </ul>
+        </div>
+        <div class="col-lg-3" id="area">
+          <h5 class="text-Dark" style="margin-top: 15px; margin-left: 180px;">  FEEDBACK</h5>
+          
+          <div class="m-2"> 
+            <textarea style="background-color: hsl(120, 20%, 95%);margin-top: 20px; margin-left: 30px;" name="" id="submit" cols="51" rows="7" placeholder="Type Your Feedback"></textarea>
+            &nbsp;<button type="button" style="margin-left: 348px;" class="btn btn-dark text-light">SUBMIT</button>
+
+          </div>
+        </div>
+        
+        <br>
+      
+</div>
+      </div>
+<br> <center><h4 >WE ARE ALWAYS DELIGHTS TO HELP YOU! </h4> </center>
+      <br> 
+        
+      <div class="text-center p-3 bg-warning text-light">
+      © 2023 Copyright: Tasty Daily
+      </div>
+       
+      </div>
+      <a href="#"><img src="img/up-arrow.png" style="float:right; margin-top: 10px; margin-right: 225px;" alt="gototop" class="top"></a>
+      </div>
+
+    </div> 
+    <div>
+     
+    
+    </div>
+
+    
+  </footer>    
+  <br>
+  <br>
+</body>
